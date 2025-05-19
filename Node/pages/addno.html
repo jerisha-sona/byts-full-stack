@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+    <link rel="stylesheet" href="../style/global.css">
+</head>
+<body>
+
+
+    <header>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVtYBF4U2XZaocecDOxckJCMKwzI9tvf95TQ&s" height="100px" alt="task">
+        <ul>
+            <li ><a href="\index.html">Tasks</a></li>
+            <li><a href="#"  class="active">Add</a></li>
+            <li><a href="./calc.html">Calculator</a></li>
+            <li><a href="./convert.html">Convert</a></li>
+            <li><a href="./stop-watch.html">Stop Watch</a></li>
+        </ul>
+    </header>
+
+    <div class="container">
+        <label for="n1"><strong>Value A:</strong></label>
+        <input class="input" type="number" name="n1" id="n1"><br/>
+        <label for="n2"><strong>Value B:</strong></label>
+        <input class="input" type="number" name="n2" id="n2"><br/>
+        <button class="btn" onclick="add()">ADD</button>
+        <h3 id="output">Output =</h3>
+
+    </div>
+    <script >
+        function add(){
+            let n1=Number(document.getElementById('n1').value);
+            let n2=Number(document.getElementById('n2').value);
+            document.getElementById('output').innerText=`Output =${n1+n2}`;
+        }
+    </script>
+</body>
+</html>

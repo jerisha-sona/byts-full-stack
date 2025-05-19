@@ -1,0 +1,86 @@
+body{
+  margin: 0;
+  background-color: rgba(221, 142, 228, 0.493);
+}
+
+ul{
+    list-style-type:none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+  } 
+
+
+  .section h2 {
+    color: #8e24aa;
+  }
+
+  .section p {
+    font-size: 16px;
+    color: #555;
+  }
+  .active{
+    color: green;
+    text-decoration: underline;
+  }
+
+  header{
+     display: flex;
+     align-items: center;
+     width: 100%;
+     background-color: #da77b9; 
+     justify-content:space-between;
+     font-size: x-large;
+     font-family: 'Times New Roman', Times, serif;
+  }
+  
+   .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+  }
+
+  button {
+    height: 30px;
+    width: auto;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+
+  li{
+    padding: 10px;
+  }
+
+  .container {
+    background-color: #ffe4ec;
+    border: 2px dashed #ff80b3;
+    padding: 20px;
+    margin: 150px auto;
+    max-width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(141, 9, 75, 0.7);
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    color: #cc2f7f;
+    transition: transform 0.3s ease;
+  }
+  
+  .container:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 18px rgba(255, 105, 180, 0.3);
+  }
+  
+
+  .btn,.input{
+    color: #5d1049;
+    margin-top:20px;
+    font-size: 18px;
+    font-family:'Comic Sans MS', cursive, sans-serif; ;
+    border-radius: 5px;
+    background-color: #cd8ca6aa;
+    height:30px;
+    margin: 10px;
+    border: 2px solid #da3d78;
+  }

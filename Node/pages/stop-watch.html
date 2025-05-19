@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+    <link rel="stylesheet" href="../style/global.css">
+</head>
+<body>
+
+
+    <header>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVtYBF4U2XZaocecDOxckJCMKwzI9tvf95TQ&s" height="100px" alt="task">
+        <ul>
+            <li ><a href="\index.html">Tasks</a></li>
+            <li><a href="./addno.html">Add</a></li>
+            <li><a href="./calc.html">Calculator</a></li>
+            <li><a href="./convert.html">Convert</a></li>
+            <li><a href="#" class="active">Stop Watch</a></li>
+        </ul>
+    </header>
+    
+    <div class="container">
+        <h3 id="count">0</h3>
+        <button onclick="start()" class="btn">start</button>
+        <button onclick="stop()" class="btn">stop</button>
+        <button onclick="reset()" class="btn">reset</button>
+    </div>
+
+    <script>
+        
+let count=0;
+let intervalId;
+function start(){
+ intervalId=setInterval(() => {
+    document.getElementById('count').innerText=++count;
+ }, 1000);
+ }
+function stop(){
+ clearInterval(intervalId);    
+}
+function reset(){
+count=0;
+document.getElementById('count').innerText=count;
+}
+    </script>
+</body>
+</html>
